@@ -16,7 +16,7 @@ var width=400,height=325;
 		/*var svg=d3.select("body").append("svg")
 				   .attr("width",width).attr("height",height)
 				   .style("background","pink");*/
-		 function loadData()
+		 function loadPieData()
             {
           d3.csv("https://raw.githubusercontent.com/apogaku/VAProject/e7e75ac959cc7b62a87db038b0ba75defc491d37/pqid_combined%20prodoffers.csv",function(data)
               {
@@ -318,3 +318,4 @@ svg.append('g')
           .attr('y', function(d, i) { return 20 * (i + 1); }) 
 
 }
+window.onload = loadPieData;
